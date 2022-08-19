@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+struct node
+{
+    int data;
+    node* address;
+};
+
+void insertathead(node* &head)
+{
+    node* temp = new node();
+    temp->data = 100;
+    temp->address = head ;
+    head = temp;
+}
+
+void printer(node*head)
+{
+    while(head!=NULL)
+    {
+        cout<<head->data<<endl;
+        head = head->address;
+    }
+}
+
+int main()
+{
+    node*head = NULL;
+    insertathead(head);
+    printer(head);
+
+
+}
