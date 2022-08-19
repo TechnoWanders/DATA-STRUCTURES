@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+struct node
+{
+    int data;
+    node* address;
+};
+
+int main()
+{
+    //Initializing nodes ;
+    node* head = new node() ;
+    node* n1 = new node() ;
+    node* n2 = new node();
+    node* n3 = new node();
+    node* n4 = new node();
+    
+    //connecting nodes aka setting up nodes ;
+    head->address = n1;
+    n1->data = 100;
+    n1->address = n2;
+    n2->data = 104;
+    n2->address = n3;
+    n3->data = 108;
+    n3->address = n4;
+    n4->data = 112;
+    n4->address = NULL;
+    
+    //printing data of each nodes;
+    cout<<n1->data<<endl;
+    cout<<n2->data<<endl;
+    cout<<n3->data<<endl;
+    cout<<n4->data<<endl;
+    
+    
+}
