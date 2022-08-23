@@ -1,0 +1,41 @@
+/*
+    //printing iterators from vector from starting to end 
+    vector<int> vess = {11,12,13,14,15};
+    vector<int> :: iterator it = vess.begin();
+    for(it=vess.begin();it<vess.end();it++)
+    {
+        print<<*it<<endl;
+    }
+    
+    //taking pairs in vector 
+    vector<pair<int,int>> vecr = {{1,2},{3,4},{5,6}};
+    vector<pair<int,int>> :: iterator ip ;
+    for(ip = vecr.begin(); ip<vecr.end(); ip++)
+    {
+        print<<ip->first<<" "<<ip->second<<br;
+    }
+    */
+    
+    /*
+    //auto and ranged base loops 
+    vector<int> vess = {1,2,3,4,5,6};
+    for(auto it = vess.begin(); it<vess.end();it++)
+    {
+        print<<*it<<endl;
+    }
+    
+    for(auto &value : vess)
+    {
+        print<<value<<endl;
+    }
+    
+    vector<pair<int,int>> vecna = {{5,6},{7,8},{9,10},{11,12}};
+    for(auto ip = vecna.begin(); ip<vecna.end(); ip++)
+    {
+        print<<ip->first<<" "<<ip->second<<endl;
+    }
+    for(auto &value : vecna)
+    {
+        print<<value.first<<" "<<value.second<<endl;
+    }
+    */
