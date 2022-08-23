@@ -1,0 +1,20 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+    vector<vector<int>>ab;
+    int i,j,value;
+    for(i=0;i<4;i++)
+    {
+        vector<int> temp;
+        for(j=0;j<3;j++)
+        {
+            cin>>value;
+            temp.push_back(value);
+        }
+        ab.push_back(temp);
+    }
+    
+    cout<<ab[0][0]<<endl;
+}
