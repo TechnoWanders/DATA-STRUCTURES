@@ -1,0 +1,53 @@
+/*
+    swapppings
+    pair <int,string> pe;
+    pair <int,string> ps;
+    pe = mp(1223, "pyhton");
+    ps = mp(4231, "Javascript");
+    pe.swap(ps);
+    print<<pe.fs<<" "<<pe.se<<br;
+    print<<ps.se<<" "<<ps.se<<br;
+    */
+    
+    /* 
+    tie()
+    pair <int,int> peco;
+    peco = mp(1234,5678);
+    int a,b,c;
+    tie(a,b) = peco;
+    cout<<a<<" "<<b<<endl;
+    pair<int,string> pecs;
+    pecs = mp(8976,"string");
+    tie(a,ignore) = pecs;
+    cout<<a<<" "<<b<<endl;
+    pair<int, pair<int,int>> pess;
+    pess = {456,{890,765}};
+    a = pess.fs;
+    tie(b,c) = pess.second;
+    cout<<a<<" "<<b<<" "<<c<<endl;
+    pair<string, pair<int,string>> pesw = {"SIMRA",{879,"Khan"}};
+    tie(b,ignore) = pesw.second;
+    cout<<b<<endl;
+    */
+    
+    /*
+    pair<string,string> pogba;
+    string a , b, c ,d ,e ,f;
+    scan>>a>>b;
+    pogba = mp(a,b);
+    scan>>c>>d>>e>>f;
+    pair<string,pair<string,string>> poi;
+    poi = {c,{d,e}};
+    print<<pogba.fs+poi.fs<<endl;
+    string k , m;
+    tie(k,m) = poi.se;
+    cout<<k<<" "<<m;
+    */
+    
+    /*
+    pair<string,string> pos;
+    pair<string,string> pes;
+    pos = mp ("Cool","Boys");
+    pes = mp (" Madar","Love");
+    print<<pos.se+pes.fs<<endl;
+    */
