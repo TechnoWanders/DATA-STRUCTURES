@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    unordered_map< string , int> um;
+    string s;
+    int i;
+    for(i=0;i<5;i++)
+    {
+        cin>>s;
+        um[s]++;
+    }
+    for(auto k : um)
+    {
+        cout<<k.first<<" "<<k.second<<endl;
+    }
+        
+}
