@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    map < string , int> m;
+    int i;
+    for(i=0;i<5;i++)
+    {
+        string s;
+        cin>>s;
+        m[s]++;
+    }
+    for(auto i : m)
+    {
+        cout<<i.first<<" "<<i.second<<endl;
+    }
+}
