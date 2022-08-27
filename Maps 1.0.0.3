@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    map <char , int> mm;
+    int num,i,dum;
+    char k;
+    cin>>num;
+    //insertion in maps 
+    for(i=0;i<num;i++)
+    {
+        cin>>k>>dum;
+        mm.insert({k,dum});
+    }
+    cin>>k;
+    
+    //searching in maps
+    auto it = mm.find(k);
+    cout<<it->second<<endl;
+    
+    //finding maximum value in map 
+    it = mm.begin();
+    int maxvalue = it->second;
+    for(it = mm.begin() ; it!= mm.end() ; it++)
+    {
+        if(it->second>maxvalue)
+        {
+            maxvalue = it->second;
+        }
+    }
+    cout<<maxvalue<<endl;
+    
+    return 0;
+}
