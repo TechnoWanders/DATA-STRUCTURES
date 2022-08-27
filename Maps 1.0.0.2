@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int testcases;
+    cin>>testcases;
+    map<string , int> places;
+    while(testcases--)
+    {
+    int a;
+    cin>>a;
+    int num;
+    string str;
+    if(a==1)
+    {
+        cin>>str;
+        cin>>num;
+        auto it = places.find(str);
+        
+        if(it != places.end())
+        {
+            int sum;
+            sum = it->second;
+            sum = sum + num;
+            num = sum ;
+            it->second = num;
+        }
+        else
+        {
+        places.insert({str, num});
+        }
+    }
+    else if(a==2)
+    {
+        cin>>str;
+        auto it = places.find(str);
+        it->second = 0;
+    }
+    else if(a==3)
+    {
+        cin>>str; 
+        auto it = places.find(str);
+        if(it!=places.end())
+        cout<<it->second<<endl;
+        else if(it==places.end())
+        cout<<"0"<<endl;
+    }
+    }
+}
